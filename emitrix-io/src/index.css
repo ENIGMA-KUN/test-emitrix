@@ -1,0 +1,199 @@
+/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap'); */
+@import './pages/datacollection/styles.css';
+/* @import './pages/industries/styles.css';
+@import './pages/net-zero/styles.css';
+@import './pages/product-based/styles.css';
+@import './pages/reporting/styles.css';
+@import './pages/scenario-analysis/styles.css';
+@import './pages/supply-chain/styles.css'; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body, html {
+    @apply w-full overflow-x-hidden m-0 p-0 bg-white text-[#213547];
+  }
+}
+/* Component styles */
+@layer components {
+  /* Container */
+  .container {
+    @apply w-full mx-auto px-5 md:px-20 lg:px-80 max-w-[1440px];
+  }
+
+  /* Button styles */
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight
+    border border-transparent cursor-pointer transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-black text-white hover:border-[#646cff];
+  }
+
+  .btn-text {
+    @apply text-black bg-transparent;
+  }
+
+  /* Logo and tags */
+  .logo-ticker-image {
+    @apply h-8 w-auto;
+  }
+
+  .tag {
+    @apply text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight;
+  }
+
+  /* Section styles */
+  .section-title {
+    @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter;
+    background: linear-gradient(to bottom, black, #001E80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-description {
+    @apply text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E];
+  }
+
+  .section-heading {
+    @apply max-w-[540px] mx-auto;
+  }
+
+  /* Card styles */
+  .card {
+    @apply p-10 border border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
+  }
+
+  /* Animation classes */
+  .animate-fade-in {
+    @apply opacity-0 animate-[fadeIn_0.5s_ease-in_forwards];
+  }
+
+  .animate-slide-up {
+    @apply translate-y-10 opacity-0 animate-[slideUp_0.5s_ease-out_forwards];
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@layer components {
+  .logo-ticker-image {
+    @apply h-8 w-auto object-contain;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter;
+    background: linear-gradient(to bottom, black, #001E80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-description {
+    @apply text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E];
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply max-w-[940px] mx-auto;
+  }
+
+  .section-title {
+    @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter;
+    background: linear-gradient(to bottom, black, #001E80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-description {
+    @apply text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E];
+  }
+
+  .tag {
+    @apply text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight;
+  }
+}
+
+@layer components {
+  .card {
+    @apply p-10 border rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight
+    border border-transparent cursor-pointer transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-black text-white hover:opacity-90;
+  }
+
+  .section-heading {
+    @apply max-w-[940px] mx-auto;
+  }
+
+  .section-title {
+    @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter;
+    background: linear-gradient(to bottom, black, #001E80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-description {
+    @apply text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E];
+  }
+}
+
+/* Add to your existing index.css */
+@layer components {
+  .coming-soon-container {
+    @apply min-h-screen flex justify-center items-center bg-[#f0f0f0] m-0;
+  }
+
+  .coming-soon-content {
+    @apply text-center p-10 rounded-xl bg-white shadow-lg max-w-md mx-4;
+  }
+
+  .coming-soon-heading {
+    @apply text-5xl font-bold text-gray-800 mb-6;
+  }
+
+  .coming-soon-text {
+    @apply text-lg text-gray-600;
+  }
+}
