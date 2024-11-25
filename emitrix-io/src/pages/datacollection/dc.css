@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap'); */
 
 /* start: global styles */
-body {
+dcbody {
 /* font-family: "Roboto", "Helvetica", "Sans-serif"; */
 margin: 0;
 padding: 0;
@@ -15,55 +15,55 @@ line-height: 1.7;
 outline: none;
 }
 
-*:not(.slick-track):not(.slick-list) {
+/* *:not(.slick-track):not(.slick-list) {
 transition: 0.4s;
-}
+} */
 
-.containerr {
+.dc-containerr {
 max-width: 1140px;
 margin: 0 auto;
 padding: 0 20px;
 }
 
-.flexx {
+.dc-flexx {
 display: flex;
 justify-content: space-between;
 }
 
-h1, h2, h3, h4, h5 {
+h1-dc, h2-dc, h3-dc, h4-dc, h5-dc {
 margin: 0;
 padding: 0;
 }
 
-h1, h2 {
-font-family: "Playfair Display", serif;
+h1-dc, h2-dc {
+/* font-family: "Playfair Display", serif; */
 font-weight: 800;
 }
 
-h1 {
+h1-dc {
 font-size: 3rem;
 line-height: 1.2;
 margin-bottom: 1rem;
 }
 
-h2 {
+h2-dc {
 font-size: 2.5rem;
 color: #003166;
 margin-bottom: 1rem;
 line-height: 1.2;
 }
 
-h3 {
+h3-dc {
 font-size: 1.4rem;
 font-weight: 300;
 }
 
-h4 {
+h4-dc {
 font-size: 1.2rem;
 font-weight: 300;
 }
 
-h5 {
+h5-dc {
 font-size: 1rem;
 font-family: "Playfair Display", serif;
 }
@@ -72,7 +72,7 @@ p {
 margin: 0 0 1rem;
 }
 
-button.rounded {
+button.dc-rounded {
 background:  #003166;
 border: none;
 color: #fff;
@@ -90,9 +90,9 @@ font-weight: 300;
 /* end: global styles */
 
 /* start: header styles */
-#header-hero-container {
+#dc-header-hero-container {
   min-height: 500px;
-  height: 150vh;
+  height: 90vh;
   position: relative;
   z-index: 1;
   margin-bottom: 3rem; /* Add space between hero and next section */
@@ -128,7 +128,7 @@ display: none;
 
 
 /* end: header styles */
-.nextArroww {
+.nextArroww-dc {
     right: 10px;
     position: absolute;
     top: 50%;
@@ -136,7 +136,7 @@ display: none;
     cursor: pointer;
   }
   
-  .prevArroww {
+  .prevArroww-dc {
     left: 10px;
     position: absolute;
     top: 50%;
@@ -144,18 +144,19 @@ display: none;
     cursor: pointer;
   }
 /* start: hero section styles */
-#heroo {
+#dc-heroo {
 /* background: url('https://b.top4top.io/p_2091qtqre2.jpeg') center center no-repeat; */
 background-size: cover;
 position: absolute;
 top: 0;
 left: 0;
 z-index: 1;
-height: 100%;
+height: 50vh;
 width: 100%;
+min-height: 400px;
 }
 
-#heroo .fade {
+#dc-heroo .fade {
 position: absolute;
 width: 100%;
 height: 100%;
@@ -165,22 +166,24 @@ background: rgba(52, 58, 64, 0.6);
 z-index: 1;
 }
 
-#heroo .heroo-text {
+#dc-heroo .dc-heroo-text {
 position: absolute;
-top: 50%;
-margin: -75px auto 0;
+/* margin: -75px auto 0; */
 left: 0;
 right: 0;
 z-index: 2;
 color: #fff;
 width: 500px;
 text-align: center;
+top: 50%; /* Adjust from 30% to center vertically */
+/* transform: translateY(-50%); This helps center the text perfectly */
+margin: 0 auto; /* Remove the -75px top margin */
 }
 
-#heroo .heroo-text p {
+#dc-heroo .dc-heroo-text p {
 line-height: 1.5em;
-font-weight: 300;
-font-size: 1rem;
+font-weight: 200;
+font-size: 1.5rem;
 }
 /* end: hero section styles */
 
@@ -191,15 +194,15 @@ background: #f8f9fa;
 text-align: center;
 }
 
-#how-it-works h2 {
+#how-it-works h2-dc {
 margin-bottom: 3rem;
 }
 
-#how-it-works .flexx > div {
+#how-it-works .dc-flexx > div {
 width: 30%;
 }
 
-#how-it-works h4 {
+#how-it-works h4-dc {
 color: #343a40;
 margin-top: 1rem;
 }
@@ -216,15 +219,15 @@ margin: 4rem 0 8rem;
 position: relative;
 }
 
-#properties h2 {
+#properties h2-dc {
 margin-bottom: 3rem;
 }
 
-#properties .containerr {
+#properties .dc-containerr {
 position: relative;
 }
 
-#properties .containerr:before {
+#properties .dc-containerr:before {
 content: "/";
 position: absolute;
 right: 80px;
@@ -292,61 +295,61 @@ font-style: normal;
 margin-top: 0.5rem;
 }
 
-#properties button.rounded {
+#properties button.dc-rounded {
 display: block;
 margin: 2rem auto 0;
 width: 350px;
 }
 /* end: properties styles */
 
-/* start: agents styles */
-#agents {
+/* start: agents-dc styles */
+#agents-dc {
 margin: 4rem 0 6rem;
 padding: 0 0 6rem;
 border-bottom: 1px solid #ccc;
 }
 
-#agents p.large-paragraph {
+#agents-dc p.large-paragraph {
 width: 50%;
 margin-bottom: 4rem;
 }
 
-#agents .flexx {
+#agents-dc .dc-flexx {
 flex-wrap: wrap;
 padding: 0;
 }
 
-#agents .cardd {
+#agents-dc .cardd {
 width: 32%;
 background: #e2e7ff;
 margin-bottom: 2rem;
 }
 
-#agents .cardd img {
+#agents-dc .cardd img {
 width: 100%;
 }
 
-#agents .cardd h3 {
+#agents-dc .cardd h3-dc {
 font-family: "Playfair Display", serif;
 color: #000;
 }
 
-#agents .cardd h3,
-#agents .cardd p {
+#agents-dc .cardd h3-dc,
+#agents-dc .cardd p {
 padding-left: 1rem;
 }
-/* end: agents styles */
+/* end: agents-dc styles */
 
 /* start: best real estate company styles */
 #the-best {
 margin: 2rem 0;
 }
 
-#the-best .flexx > img {
+#the-best .dc-flexx > img {
 width: 47%;
 }
 
-#the-best .flexx > div {
+#the-best .dc-flexx > div {
 width: 40%;
 }
 
@@ -368,21 +371,21 @@ margin: 8rem 0;
 border-bottom: 1px solid #dee2e6;
 }
 
-#services h2 {
+#services h2-dc {
 text-align: center;
 margin-bottom: 3rem;
 }
 
-#services .flexx {
+#services .dc-flexx {
 flex-wrap: wrap;
 }
 
-#services .flexx > div {
+#services .dc-flexx > div {
 width: 30%;
 margin-bottom: 2rem;
 }
 
-#services .flexx > div .fas {
+#services .dc-flexx > div .fas {
 color:  #003166;
 font-size: 40px;
 float: left;
@@ -391,17 +394,17 @@ width: 20%;
 text-align: center;
 }
 
-#services .flexx > div .services-card-right {
+#services .dc-flexx > div .services-card-right {
 float: right;
 width: 75%;
 }
 
-#services .flexx > div a {
+#services .dc-flexx > div a {
 color:  #003166;
 text-decoration: none;
 }
 
-#services .flexx > div a:hover {
+#services .dc-flexx > div a:hover {
 text-decoration: underline;
 }
 /* end: services styles */
@@ -411,7 +414,7 @@ text-decoration: underline;
 margin-bottom: 8rem;
 }
 
-#testimonials h2 {
+#testimonials h2-dc {
 text-align: center;
 }
 
@@ -463,12 +466,12 @@ background: #f8f9fa;
 padding: 4rem 0 8rem;
 }
 
-#contact h2 {
+#contact h2-dc {
 text-align: center;
 margin-bottom: 4rem;
 }
 
-#form-container {
+#dc-form-container {
 width: 58%;
 background: #fff;
 padding: 3rem;
@@ -476,20 +479,20 @@ box-sizing: border-box;
 height: 0%;
 }
 
-#form-container h3 {
+#dc-form-container h3-dc {
 color: #000;
 font-family: "Playfair Display", serif;
 margin-bottom: 2rem;
 }
 
-#form-container label {
+#dc-form-container label {
 display: block;
 color: #000;
 margin-top: 1rem;
 }
 
-#form-container input,
-#form-container textarea {
+#dc-form-container input,
+#dc-form-container textarea {
 display: block;
 border-radius: 20px;
 padding: 10px;
@@ -502,13 +505,13 @@ font-size: 1rem;
 color: #495057;
 }
 
-#form-container textarea {
+#dc-form-container textarea {
 height: 170px;
 margin-bottom: 2rem;
 resize: none;
 }
 
-#address-container {
+#dc-address-container {
 width: 38%;
 background: #fff;
 padding: 1.5rem;
@@ -516,27 +519,27 @@ box-sizing: border-box;
 height: 0%;
 }
 
-#address-container label {
+#dc-address-container label {
 font-weight: 700;
 display: block;
 margin-top: 2rem;
 }
 
-#address-container label:first-child {
+#dc-address-container label:first-child {
 margin-top: 0;
 }
 
-#address-container address {
+#dc-address-container address {
 margin-bottom: 1.5rem;
 font-style: normal;
 }
 
-#address-container a {
+#dc-address-container a {
 text-decoration: none;
 color:  #003166;
 }
 
-#address-container a:hover {
+#dc-address-container a:hover {
 text-decoration: underline;
 }
 /* end: contact us styles */
@@ -560,7 +563,7 @@ position: relative;
 #logo {
 top: 1px;
 }
-.nextArroww {
+.nextArroww-dc {
     right: 10px;
     position: absolute;
     top: 50%;
@@ -568,7 +571,7 @@ top: 1px;
     cursor: pointer;
   }
   
-  .prevArroww {
+  .prevArroww-dc {
     left: 10px;
     position: absolute;
     top: 50%;
@@ -595,15 +598,15 @@ margin: 0;
 }
 
 @media (max-width: 767px) {
-h1 {
+h1-dc {
 font-size: 2rem;
 }
 
-h2 {
+h2-dc {
 font-size: 1.75rem;
 }
 
-h3 {
+h3-dc {
 font-size: 1.2rem;
 }
 
@@ -615,23 +618,23 @@ p {
 font-size: 0.8rem;
 }
 
-.containerr {
+.dc-containerr {
 max-width: 540px;
 }
 
-#heroo .heroo-text {
+#dc-heroo .dc-heroo-text {
 width: 400px;
 }
 
-#agents .cardd {
+#agents-dc .cardd {
 width: 49%;
 }
 
-#the-best .flexx > img {
+#the-best .dc-flexx > img {
 display: none;
 }
 
-#the-best .flexx > div {
+#the-best .dc-flexx > div {
 width: 100%;
 }
 
@@ -639,7 +642,7 @@ width: 100%;
 font-size: 1.2rem;
 }
 
-#properties .containerr:before {
+#properties .dc-containerr:before {
 top: 2px;
 font-size: 0.85rem;
 }
@@ -648,24 +651,24 @@ font-size: 0.85rem;
 font-size: 0.85rem;
 }
 
-#properties button.rounded {
+#properties button.dc-rounded {
 width: 300px;
 }
 
-#services .flexx > div {
+#services .dc-flexx > div {
 width: 48%;
 }
 
-#contact .flexx {
+#contact .dc-flexx {
 flex-wrap: wrap;
 }
 
-#form-container {
+#dc-form-container {
 width: 100%;
 padding: 2rem;
 }
 
-#address-container {
+#dc-address-container {
 width: 100%;
 margin-top: 2rem;
 }
@@ -674,33 +677,33 @@ margin-top: 2rem;
 }
 
 @media (max-width: 500px) {
-#heroo .heroo-text {
+#dc-heroo .dc-heroo-text {
 width: 330px;
 }
 
-#agents {
+#agents-dc {
 margin: 4rem 0 3rem;
 padding: 0 0 3rem;
 }
 
-#agents .cardd {
+#agents-dc .cardd {
 width: 100%;
 }
 
-#agents p.large-paragraph {
+#agents-dc p.large-paragraph {
 width: 100%;
 }
 
-#how-it-works .flexx {
+#how-it-works .dc-flexx {
 display: block;
 }
 
-#how-it-works .flexx > div {
+#how-it-works .dc-flexx > div {
 width: 100%;
 margin-top: 2rem;
 }
 
-#properties button.rounded {
+#properties button.dc-rounded {
 width: 250px;
 }
 
@@ -709,7 +712,7 @@ padding: 4rem 0 3rem;
 margin: 4rem 0;
 }
 
-#services .flexx > div {
+#services .dc-flexx > div {
 width: 100%;
 }
 
@@ -729,11 +732,11 @@ display: none !important;
 padding: 4rem 0;
 }
 
-#contact h2 {
+#contact h2-dc {
 margin-bottom: 2rem;
 }
 
-#form-container {
+#dc-form-container {
 padding: 1.5rem;
 }
 
@@ -741,12 +744,12 @@ padding: 1.5rem;
 }
 
 @media (max-width: 400px) {
-#heroo .heroo-text {
+#dc-heroo .dc-heroo-text {
 max-width: 275px;
 width: 100%;
 }
 
-#properties button.rounded {
+#properties button.dc-rounded {
 max-width: 250px;
 width: 100%;
 }
@@ -823,7 +826,7 @@ width: 100%;
   background: #f8f9fa;
 }
 
-#how-it-works h2 {
+#how-it-works h2-dc {
   text-align: center;
   color: #003166;
   margin-bottom: 3rem;
@@ -844,7 +847,7 @@ width: 100%;
   transform: translateY(-5px);
 }
 
-.feature-box h4 {
+.feature-box h4-dc {
   color: #343a40;
   margin: 1rem 0;
   font-size: 1.2rem;
@@ -882,7 +885,7 @@ width: 100%;
       margin: 15px 0;
   }
   
-  .flexx {
+  .dc-flexx {
       flex-direction: column;
   }
   
@@ -891,7 +894,7 @@ width: 100%;
   }
 }
 
-.nextArroww, .prevArroww {
+.nextArroww-dc, .prevArroww-dc {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -909,15 +912,15 @@ width: 100%;
   transition: all 0.3s ease;
 }
 
-.nextArroww {
+.nextArroww-dc {
   right: -20px;
 }
 
-.prevArroww {
+.prevArroww-dc {
   left: -20px;
 }
 
-.nextArroww:hover, .prevArroww:hover {
+.nextArroww-dc:hover, .prevArroww-dc:hover {
   background: #003166;
   color: white;
   transform: translateY(-50%) scale(1.1);
@@ -925,10 +928,10 @@ width: 100%;
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .nextArroww {
+  .nextArroww-dc {
       right: -10px;
   }
-  .prevArroww {
+  .prevArroww-dc {
       left: -10px;
   }
 }

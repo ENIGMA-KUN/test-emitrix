@@ -39,7 +39,7 @@ const solutionCards = [
 const SolutionCard = ({ title, subtitle, buttonText, popular, inverse, features, icon: Icon, link }) => (
   <div
     className={`card h-full ${
-      inverse ? "border-black bg-black text-white" : "border-gray-200 bg-white text-black"
+inverse ? "border-black bg-black text-white" : "border-gray-200 bg-white text-black"
     }`}
   >
     <div className="flex justify-between items-center">

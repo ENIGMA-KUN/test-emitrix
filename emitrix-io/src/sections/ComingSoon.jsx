@@ -1,7 +1,9 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 
 const ComingSoon = () => {
+  console.log('ComingSoon component rendering');
+  
   return (
     <motion.section
       initial={{ opacity: 0 }}

@@ -52,7 +52,7 @@ export const Header = () => {
 
   const solutionItems = [
     { title: "Industries", Icon: Building2, link: '/industries' },
-    { title: "Supply Chain", Icon: Truck, link: '/scope3' },
+    { title: "Supply Chain", Icon: Truck, link: '/supply-chain' },
     // { title: "AI Monitoring", Icon: Brain },
   ];
 

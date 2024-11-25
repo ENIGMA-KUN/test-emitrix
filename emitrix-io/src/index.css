@@ -1,11 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap'); */
-@import './pages/datacollection/styles.css';
-/* @import './pages/industries/styles.css';
-@import './pages/net-zero/styles.css';
-@import './pages/product-based/styles.css';
-@import './pages/reporting/styles.css';
-@import './pages/scenario-analysis/styles.css';
-@import './pages/supply-chain/styles.css'; */
 
 @tailwind base;
 @tailwind components;
@@ -197,3 +189,10 @@
     @apply text-lg text-gray-600;
   }
 }
+
+/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap'); */
+ /* @import './pages/datacollection/dc.css';
+ @import './pages/industries/in.css';
+@import './pages/net-zero/nz.css';
+@import './pages/reporting/rp.css';
+@import './pages/supply-chain/sc.css'; */
